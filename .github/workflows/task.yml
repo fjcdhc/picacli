@@ -31,7 +31,7 @@ on:
         description: '上传到 file.io'
         type: boolean
         default: true
-      MAKE_TO_EPUB
+      MAKE_TO_EPUB:
         description: '打包成epub'
         type: boolean
         default: true
