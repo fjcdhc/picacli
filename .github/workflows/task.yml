@@ -31,6 +31,10 @@ on:
         description: '上传到 file.io'
         type: boolean
         default: true
+       MAKE_TO_EPUB
+          description: '打包成epub'
+          type: boolean
+          default: true
       # PICA_DL_CONCURRENCY:
       #   description: '下载并发数'
       #   required: true
