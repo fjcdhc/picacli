@@ -94,13 +94,13 @@ jobs:
       - name: Download
         run: pnpm start
 
-      - name: build benzipugor
+      - name: Build benzipubor
         if: inputs.MAKE_TO_EPUB
         run: make
              
       - name: Make Epublish file
         if: inputs.MAKE_TO_EPUB
-        run: ./benzipugor-linux-amd64 comics/
+        run: ./benzipubor-linux-amd64 comics/
         
       - name: Compress
         if: inputs.OUTPUT_ZIP
