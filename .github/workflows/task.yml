@@ -96,9 +96,9 @@ jobs:
 
       - name: Build benzipugor
         if: inputs.MAKE_TO_EPUB
-        run: cd /home/run/work/picacli/picacli/benzipugor
-             go build -o /home/run/work/picacli/picacli/benzipubor-linux-amd64 -ldflags="-s -w"
-             cd /home/run/work/picacli/picacli
+        run: cd /home/runner/work/picacli/picacli/benzipugor
+             go build -o /home/runner/work/picacli/picacli/benzipubor-linux-amd64 -ldflags="-s -w"
+             cd /home/runner/work/picacli/picacli
 
       - name: Make Epublish file
         if: inputs.MAKE_TO_EPUB
