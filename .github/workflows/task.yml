@@ -95,9 +95,12 @@ jobs:
         run: pnpm start
 
       - name: Build benzipugor
+        if: inputs.MAKE_TO_EPUB
         run: go build -v ./benzipugor
 
       - name: Make Epublish file
+        if: inputs.MAKE_TO_EPUB
+        run: ./benzipugor-$ARCH-
         
       - name: Compress
         if: inputs.OUTPUT_ZIP
