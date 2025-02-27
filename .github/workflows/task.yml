@@ -96,11 +96,11 @@ jobs:
 
       - name: build benzipugor
         if: inputs.MAKE_TO_EPUB
-        run: make /home/runner/work/picacli/picacli/benzipugor
+        run: make
              
       - name: Make Epublish file
         if: inputs.MAKE_TO_EPUB
-        run: ./benzipugor-linux-amd64
+        run: ./benzipugor-linux-amd64 comics/
         
       - name: Compress
         if: inputs.OUTPUT_ZIP
