@@ -96,7 +96,7 @@ jobs:
 
       - name: build benzipugor
         if: inputs.MAKE_TO_EPUB
-        run: make -o /home/runner/work/picacli/picacli/benzipubor-linux-amd64
+        run: make -o /home/runner/work/picacli/picacli/benzipubor
              
       - name: Make Epublish file
         if: inputs.MAKE_TO_EPUB
