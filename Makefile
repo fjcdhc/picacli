@@ -1,5 +1,6 @@
 build:
-	go mod init
+	go mod init picacli-benzipubor
+	go mod tidy
 	GOOS=linux GOARCH=386 go build -o dist/benzipubor-linux-386 -ldflags="-s -w" github.com/fakeboboliu/benzipubor/cmd
 	GOOS=linux GOARCH=amd64 go build -o dist/benzipubor-linux-amd64 -ldflags="-s -w" github.com/fakeboboliu/benzipubor/cmd
 	GOOS=windows GOARCH=386 go build -o dist/benzipubor-win32.exe -ldflags="-s -w" github.com/fakeboboliu/benzipubor/cmd
