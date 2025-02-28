@@ -93,6 +93,9 @@ jobs:
 
       - name: Download
         run: pnpm start
+        
+      - name: list
+        run: ls
 
       - name: Build benzipubor
         if: inputs.MAKE_TO_EPUB
