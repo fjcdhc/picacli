@@ -103,7 +103,7 @@ jobs:
              
       - name: Make Epublish file
         if: inputs.MAKE_TO_EPUB
-        run: ./benzipubor-linux-amd64 -in 'comics/'
+        run: ./benzipubor-linux-amd64 -in '/home/runner/work/picacli/picacli/comics/*'
         
       - name: Compress
         if: inputs.OUTPUT_ZIP
