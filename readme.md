@@ -125,3 +125,5 @@ pnpm dev:zip
 ## 其他
 
 代码参考了 [pica_crawler](https://github.com/lx1169732264/pica_crawler)，本来是想添加新功能，奈何 Python 早就忘光了，只好重写一个。
+
+fork注：由于本项目使用了[benzipubor](github.com/fakeboboliu/benzipubor)，而其项目使用GPLv3协议，所以我更改了许可文件。
